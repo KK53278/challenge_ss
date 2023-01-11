@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
 
-  resource :time, only: [:index, :show]
+  # resource :attendances, only: [:index, :show]
+  get 'api/attendances', to: 'attendances#index'
+
 end
